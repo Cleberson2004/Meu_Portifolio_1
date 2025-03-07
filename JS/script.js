@@ -1,3 +1,9 @@
-function naotem(naotem) {
-    alert("Ainda sem função, mas no futuro irei adicionar :)")
+function open_side_bar(){
+    var side_bar = document.getElementById("side_bar_div")
+    if(side_bar.style.display === 'block'){
+        side_bar.style.display = 'none'
+
+    }else{
+        side_bar.style.display = 'block'
+    }
 }

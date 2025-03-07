@@ -1,32 +1,43 @@
 
 body{
     font-family: 'Poppins';
-    background-image: linear-gradient(to bottom,rgb(13, 88, 250),rgb(99, 172, 255));
+    background-image: linear-gradient(to bottom,rgb(8, 85, 252),rgb(96, 170, 255));
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
 #circulo{
-    background-image: url(../IMAGENS/WhatsApp\ Image\ 2024-08-28\ at\ 14.13.02.png);
+    background-image: url(../IMAGENS/fotoportfolio.png);
     background-position: center;
-    background-size: 170px;
+    background-size: 220px;
     background-repeat: no-repeat;
     background-color: rgb(0, 78, 194);
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     align-items: center;
     margin: auto;
     border: 1px solid white;
     box-shadow: 4px 4px 12px rgb(0, 30, 85);
 }
+#sonho{
+    margin-bottom: 80px;
+}
+h3{
+    font-size: larger;
+}
+#circulo:hover{
+    filter: brightness(80%);
+}
 header{
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     align-items: center;
     margin-top: 20px;
 }
 main{
+    margin-bottom: 60px;
     text-align: center;
 }
 .card img {
@@ -60,7 +71,7 @@ main{
     padding: 10px;
     position: absolute;
     margin-left: 760px;
-    margin-top: -93px;
+    margin-top: -113px;
 }
 #curriculo:hover{
     color: white;
@@ -77,6 +88,15 @@ main{
     margin-left: -83px;
     width: max-content;
     height: 150px;
+}
+#github{
+    max-width: 140px;
+    margin-left: -18px;
+    text-align: center;
+}
+#git{
+    max-width: 150px;
+    margin-left: -28px;
 }
 .card2{
     border: 0;
@@ -104,15 +124,53 @@ footer{
     margin-top: 25px;
 }
 #side_bar{
+    border: 3px solid rgb(0, 26, 255);
+    border-radius: 10px;
+    width: 50px;
+    height: 40px;
     font-size: xx-large;
     position: absolute;
     margin-left: -930px;
-    margin-top: 18px;
-}
-#side_bar:hover{
-    content: "Ainda sem função no momento, mas no futuro vou adicionar :)";
+    margin-top: 20px;
 }
 .links{
     display: grid;
+    
+}
+li:hover{
+    background-color: rgb(140, 151, 255);
+}
+#side_bar_div{
+    display: none;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 0;
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 1rem;
+}
+@media(max-width:600px){
+    h1{
+        font-size: larger;
+    }
+    p{
+        font-size: large;
+    }
+    .card2{
+        margin-top: 40px;
+    }
+    .card{
+        margin-top: 20px;
+    }
     
 }

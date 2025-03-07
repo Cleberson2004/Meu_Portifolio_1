@@ -8,26 +8,37 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9c0b449e7b.js" crossorigin="anonymous"></script>
     <link rel="icon" href="IMAGENS/mug-hot-solid.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-bars" id="side_bar" onclick=""document.body.innerHTML = "Ainda sem função, mas no futuro irei adicionar :)"></i>
-        <h1>Designer & Desenvolvedor Front-End</h1>
+        <i class="fa-solid fa-bars" id="side_bar" onclick="open_side_bar()"></i>
+        <div id="side_bar_div" >
+            <ul>
+                <li><a href="#inicio" >Inicio</a></li>
+                <li><a href="#habilidades" >Habilidades</a></li>
+                <li><a href="#projetos">Projetos </a></li>
+                <li><a href="#contato">Contato </a></li>
+            </ul>
+        </div>
+
+
+        <h1 id="inicio" >Designer & Desenvolvedor Front-End</h1>
         <a href="https://www.linkedin.com/in/cleberson-ribeiro-b6955629b/" target="_blank" id="curriculo">Meu Currículo</a>
-        <h3>Eu desenvolvo e crio páginas WEB.</h3>
+        <h3 class="animate__animated animate__backInDown">Eu desenvolvo e crio páginas WEB.</h3>
         <div>
             <div id="circulo">
         </div>
 
     </header>
     <main>
-        <h1></h1>
-        <h2>Olá, Eu sou Cleberson.</h2>
-        <p>Atualmente estou cursando Ciências da Computação na faculdade Estácio do Ceará, e meu sonho é trabalhar como programador <br>e aqui neste portfólio vou mostrar alguns de meus projetos e minhas habilidades que adquiri até o momento, <br>como estou cursando, vou atualizando este site conforme for aprendendo novas habilidades e novas implementações. </p>
-        <h1>Minhas Tecnologias</h1>
+        <h2 class="animate__animated animate__bounceInLeft">Olá, Eu sou Cleberson.</h2>
+        <p  id="sonho" class="animate__animated animate__bounceInLeft" class="animate__animated animate__fadeOut">Atualmente estou cursando Ciências da Computação na faculdade Estácio do Ceará, e meu sonho é trabalhar como programador <br>e aqui neste portfólio vou mostrar alguns de meus projetos e minhas habilidades que adquiri até o momento, <br>como estou cursando, vou atualizando este site conforme for aprendendo novas habilidades e novas implementações. </p>
+        <h1 id="habilidades">Minhas Habilidades</h1>
         
         <div class="card">
-            <img src="IMAGENS/HTML5_logo_and_wordmark.svg.png" id="html">
+            <img src="IMAGENS/HTML5_logo_and_wordmark.svg.png" id="html" > 
         </div>
 
         <div class="card">
@@ -35,11 +46,18 @@
         </div>
 
         <div class="card">
-            <img src="IMAGENS/javascript-logo-8892AEFCAC-seeklogo.com.png" id="js">
+            <img src="IMAGENS/javascript-logo-8892AEFCAC-seeklogo.com.png" id="js" >
+        </div>
+        <div class="card">
+            <img src="IMAGENS/GitHub-Logo.png" id="github">
         </div>
 
-        <h1>Meus Trabalhos Recentes</h1>
-        <p>Aqui tem alguns trabalhos que eu já trabalhei</p>
+        <div class="card">
+            <img src="IMAGENS/git.png" id="git">
+        </div>
+        
+        <h1 id="projetos">Meus Projetos Recentes</h1>
+        <p>Aqui tem alguns projetos que fiz recentemente.</p>
         <div class="card2">
             <img src="IMAGENS/Site_1.PNG">
             <a href class="links">Tryme</a>
@@ -62,9 +80,10 @@
     </main>
     <footer>
         <i class="fa-brands fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/cleberson-ribeiro-b6955629b/" target="_blank">Linkedin</a>
+        <a href="https://www.linkedin.com/in/cleberson-ribeiro-b6955629b/" target="_blank" id="contato">Linkedin</a>
         <p><a href="mailto:clebersondias2004@gmail.com?subject=Assunto" >clebersondias2004@gmail.com</a></p>
     </footer>
 </body>
 </html>
 <script src="JS/script.js"></script>
+<script>AOS.init();</script>
