@@ -232,21 +232,56 @@ html{
     scroll-behavior: smooth;
     scroll-padding: 1rem;
 }
-@media(max-width:600px){
-    *{
+@media(max-width:640px){
+    body{
         overflow-x: hidden;
     }
     h1{
         font-size: larger;
     }
+    #inicio{
+        font-size: 50px;
+    }
+    #circulo{
+        width: 200px;
+        height: 200px;
+        background-position: center;
+    }
     p{
         font-size: large;
     }
     .card2{
+        
         margin-top: 40px;
+    }
+    .card2:hover{
+        transform: scale(1.0);
     }
     .card{
         margin-top: 20px;
+    }
+    .card:hover{
+        transform: scale(1.0);
+    }
+    #icon_port{
+        display: block;
+        position: absolute;
+        margin-left: 35%;
+        width: 120px;
+        height: 120px;
+    }
+    #curriculo{
+        overflow: hidden;
+        display: none;
+    }
+    #btn_cv{
+        width: 50%;
+    }
+    #github_btn,#linkedin_btn{
+        margin-left: 36%;
+    }
+    #a_email{
+        margin-left: 15%;
     }
     
 }
