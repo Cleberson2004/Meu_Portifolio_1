@@ -237,7 +237,9 @@ a{
     margin-left: 45%;
 }
 
-
+#formularios{
+    margin-top: 100px;
+}
 html{
     scroll-behavior: smooth;
     scroll-padding: 1rem;
