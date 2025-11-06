@@ -145,13 +145,23 @@ main{
     height: 150px;
 }
 #github{
-    max-width: 140px;
-    margin-left: -18px;
+    max-width: 110px;
+    margin-left: -5px;
     text-align: center;
 }
 #git{
     max-width: 150px;
     margin-left: -28px;
+}
+#laravel{
+    max-width: 120px;
+    margin-left: -10px;
+    height: 150px;
+}
+#java{
+    max-width: 200px;
+    margin-left: -25px;
+    height: 150px;
 }
 .card2{
     border: 0;
@@ -204,7 +214,7 @@ main{
 }
 
 #git-btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     margin-left: 5px;
     transition: 350ms ease;
     filter: brightness(80%);
